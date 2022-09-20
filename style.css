@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main div {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+    animation: ani 2s infinite linear;
+}
+
+
+
+@keyframes ani {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.main div:nth-child(3):after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+    left: 12.1vw;
+    bottom: 11.1vw;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px rgba(43, 43, 254, 0.664),
+        0 0 0 10px rgba(84, 84, 251, 0.475),
+        0 0 0 15px rgba(77, 77, 178, 0.405);
+}
+
+.main div:nth-child(3) {
+    border: 2px solid transparent;
+    border-top: solid blue;
+    position: absolute;
+    top: 20vh;
+}
+
+
+
+.main div:nth-child(2):after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(68, 255, 0);
+    left: 11.6vw;
+    bottom: 1vw;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px rgba(102, 245, 50, 0.615),
+        0 0 0 10px rgba(122, 248, 76, 0.505),
+        0 0 0 15px rgba(133, 218, 102, 0.299);
+}
+
+.main div:nth-child(2) {
+    border: 2px solid transparent;
+    border-right: solid rgb(68, 255, 0);
+    position: absolute;
+    left: 45vw;
+}
+
+.main div:nth-child(1):after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(255, 225, 0);
+    left: 2.2vw;
+    bottom: 12.3vw;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px rgba(251, 228, 53, 0.442),
+        0 0 0 10px rgba(239, 221, 83, 0.372),
+        0 0 0 15px #8e9e2267;
+}
+
+.main div:nth-child(1) {
+    border: 2px solid transparent;
+    border-left: solid rgb(255, 225, 0);
+    position: absolute;
+    left: 40vw;
+}
+
+.main p {
+    color: darkseagreen;
+    position: absolute;
+    top: 75vh;
+    font-size: 2em;
+    font-family: consolas;
+    letter-spacing: 3px;
+
+}
+
+.new-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.new-p {
+    font-family: consolas;
+    letter-spacing: 3px;
+    font-size: 4em;
+}
